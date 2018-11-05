@@ -1,2 +1,1 @@
-# brooke.github.io
-## brookebillmaier.com
+# brookebillmaier.com
