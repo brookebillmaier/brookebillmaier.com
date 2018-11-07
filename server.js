@@ -1,17 +1,22 @@
 const express = require('express');
-const app = express ();
-const bodyParser = require('body-parser')
-const main = express.Router;
-const PORT = process.env.PORT || 3000;
+const app = express();
+const session = require('express-session')
+const router = express.Router()
 
+
+const PORT = process.env.PORT || 3001;
+
+// Middleware
+app.use(express.json())
 app.use(express.static('public'))
-app.use(express.urlencoded({extended: false}))
-app.use(express.json());
-app.use(bodyParser.json())
 
+//Extended: false - does not allow nested objects in query strings
+app.use(express.urlencoded({extended: false}));
 
-const mainController = require ('./controllers/main.js')
-app.use('/', mainController)
+// Routes
+app.get('/', function(req, res){
+  res.render('index.html');
+});
 
 
 app.listen(PORT, () => {

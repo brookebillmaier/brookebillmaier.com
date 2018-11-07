@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="MainApp">
+  <head>
+    <!-- Angular Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <!-- Angular App Script -->
+   <script src="/js/app.js" charset="utf-8"></script>
+   <!-- Connecting CSS  -->
+   <link rel="stylesheet" type="text/css" href="/css/main.css"></link>
+    <meta charset="utf-8">
+    <title>Brooke Billmaier</title>
+  </head>
+
+<!-- MAIN CONTROLLER -->
+<body ng-controller="MainController as ctrl">
+  <!-- Include Navbar Partials -->
+  <div class = "navbar">
+    <nav ng-include="'partials/nav.html'">
+    </nav>
+  </div>
+  <header></header>
+    <div ng-include ="ctrl.includePath"></div>
+
+
+
+    <!-- Include Footer Partial  -->
+    <footer>
+      <nav ng-include="'partials/footer.html'">
+    </footer>
+  </body>
+</html>
