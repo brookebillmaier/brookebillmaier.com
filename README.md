@@ -1,8 +1,6 @@
 # brookebillmaier.com
 
-## Portfolio site 
-
-##Technology Used:
+## Technology Used:
 HTML
 Sass
 Javascript
