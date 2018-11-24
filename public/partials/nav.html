@@ -1,5 +1,22 @@
-  <a class="nav" ng-click="ctrl.changeInclude('main')">Home</a>
-  <a class = "nav" ng-click="ctrl.changeInclude('about')"> About</a>
-  <a class = "nav" ng-click="ctrl.changeInclude('projects')"> Projects </a>
-  <a class = "nav" ng-click="ctrl.changeInclude('resume')"> Resume</a>
-  <a class = "nav" ng-click="ctrl.changeInclude('article')"> Articles</a>
+<div ng-controller="MainCtrl" class = "topnav" id="mobile">
+  <ul class ="navigation">
+    <li class="home" style="font-size: 2em;" ng-click="scrollTo('home')"><i class="fas fa-home"></i></a></li>
+    <li  class = "navlink" ng-click="scrollTo('about')">About</a></li>
+    <li class = "navlink" ng-click="scrollTo('resume')">Resume</a></li>
+    <li class = "navlink" ng-click="scrollTo('projects')">Projects</a></li>
+    <li class = "navlink" ng-click="scrollTo('article')">Articles</a></li></ul>
+    <ul class ="right">
+    <li class= "navlinkRight" style="font-size:2em;">
+    <i class="fas fa-envelope icon-4x"></i></li>
+    <li class= "navlinkRight" style="font-size:2em;"><i class="fab fa-linkedin"></i></li>
+    <li class= "navlinkRight" style="font-size:2em;"><i class="fab fa-github"></i></li>
+    <li class= "navlinkRight" style="font-size:2em;"><i class="fab fa-slack-hash icon-4x"></i></li>
+
+</div>
+</ul>
+    <div class="menuicon" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+</div>
