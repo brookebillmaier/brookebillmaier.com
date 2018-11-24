@@ -120,6 +120,7 @@ p:nth-child(2){
 
 .barchart {
   border: 2px solid var(--pink);
+  background-color: white;
   display: inline;
   float: right;
   width: 50%;
@@ -255,10 +256,10 @@ nav {
 @import url('https://fonts.googleapis.com/css?family=Domine');
 
 .navlink {
-  margin: .5vw 1vw;
   justify-content: flex-start;
   font-family: 'Domine', serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  margin-left: 2vw;
 
 }
 
@@ -267,7 +268,7 @@ nav {
   color: #a12028;
   cursor: pointer;
   border-bottom: 1px solid var(--brown);
-  padding-bottom: 21px;
+  margin-bottom: -10px;
 
 }
 
@@ -276,7 +277,7 @@ nav {
   margin: .5vw;
   justify-content: flex-end;
   margin-top: 0;
-  margin-right: 0;
+  margin-right: 2vw;
 
 
 }
@@ -287,14 +288,15 @@ nav {
 }
 .home {
   justify-content: flex-start;
-  margin: 0;
-  padding: 0;
+  margin-left: 2vw;
+  padding-top: 0;
+  margin-top: 0;
 }
 .home:hover {
   color: #a12028;
   cursor: pointer;
   border-bottom: 1px solid var(--brown);
-  padding-bottom: 9px;
+  padding-bottom: 4px;
 
 }
 
