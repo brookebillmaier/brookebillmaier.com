@@ -29,9 +29,10 @@
     <div class = "landing"><div class="landingimage"></div>
       <div class ="codingScript">sdfhsakjfhsklfhlasjkflas</div>
       <!-- <div class="designerScript"><h1>DESIGNER</h1></div> -->
-     <button class ="viewButton"> View my work
+      <div ng-controller="MainCtrl">
+     <button class ="viewButton" ng-click="scrollTo('projects')"> View my work
        <i id="arrow" class="fas fa-arrow-right" style="font-size:1em;"></i></button>
-  </div>
+  </div></div>
       <!--Include content from partials on navbar click
           <div class = "container">
             <div ng-include="ctrl.includePath"></div>
@@ -42,10 +43,13 @@
 
       <!-- Include about content first -->
     <div class="content">
-      <div id = "about" ng-include="'partials/about.html'"></div>
+      <div id = "about" ng-include="'partials/about.html'">
+
+      </div>
 
       <!-- Include resume content second -->
       <div id = "resume" ng-include="'partials/resume.html'">
+
       </div>
 
       <!-- Include projects section third -->
