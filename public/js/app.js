@@ -1,5 +1,10 @@
 const app = angular.module('MainApp',[])
 
+// .run(['$anchorScroll', function($anchorScroll) {
+//   $anchorScroll.yOffset = 0;
+// }])
+
+
 app.controller('MainController', ['$http', function($http){
   const controller = this;
 
@@ -7,6 +12,11 @@ app.controller('MainController', ['$http', function($http){
   this.changeInclude = (path) => {
   this.includePath = 'partials/'+ path +'.html';
   }
+
+  // $http.gotoTop = function() {
+  //   $location.hash('top');
+  //   $anchorScroll();
+  // };
 
 
 }])
