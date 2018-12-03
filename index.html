@@ -13,8 +13,6 @@
 
   <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
 
   <!-- CanvasJS for barchart  -->
   <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
@@ -24,20 +22,16 @@
   <!-- Connecting CSS  -->
   <link rel="stylesheet" type="text/css" href="/css/main.css"></link>
 
-  <link rel="icon"
-        type="image/png"
-        href="icon.png" />
     <meta charset="utf-8">
-    <title>Brooke Billmaier</title>
+    <title>Brooke</title>
   </head>
 
 <!-- MAIN CONTROLLER -->
   <body ng-controller="MainController as ctrl">
     <!-- Header/ Landing Page -->
     <a id ="top"></a>
-    <div class = "landing">
-  <div class="landingimage"></div>
-        <!-- <div class ="codingScript">sdfhsakjfhsklfhlasjkflas</div> -->
+    <div class = "landing"><div class="landingimage"></div>
+      <div class ="codingScript">sdfhsakjfhsklfhlasjkflas</div>
       <!-- <div class="designerScript"><h1>DESIGNER</h1></div> -->
       <div ng-controller="MainCtrl">
      <button class ="viewButton" ng-click="scrollTo('projects')"> View my work
@@ -62,7 +56,6 @@
 
       </div>
 
-
       <!-- Include projects section third -->
       <div id = "projects" ng-include="'partials/projects.html'">
       </div>
@@ -80,15 +73,11 @@
 
 
 
+<!-- CanvasJS script -->
 
- <!-- Materialize Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
- <!-- CanvasJS script -->
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
- <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
- <script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
- <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
   </body>
 </html>
