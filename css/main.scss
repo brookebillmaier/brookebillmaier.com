@@ -499,10 +499,12 @@ nav {
 .page-footer .container {
   max-height: 15vw;
 }
-
-.white-text {
-  font-family: "Source Serif Pro"
+footer-copyright {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+.white-text {
+  font-family: "Source Serif Pro"
+  float: right;
 }
