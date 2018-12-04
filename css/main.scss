@@ -281,11 +281,9 @@ p:nth-child(2){
   font-size: 15px;
 }
 
-.waves-effect.waves-brown .waves-ripple {
-  /* The alpha value allows the text and background color
-  of the button to still show through. */
-   background-color: var(--pink);
- }
+.red lighten-3:focus{
+  background-color: var(--lightpink);
+}
 
 /* PROJECTS */
 #projects {
