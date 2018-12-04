@@ -281,13 +281,16 @@ p:nth-child(2){
   font-size: 15px;
 }
 
-.btn:hover {
+.btn a:hover {
   background-color: var(--brown);
 }
 .btn:focus {
   background-color: var(--pink);
 }
 
+.btn a {
+background-color: var(--pink);
+}
 
 /* PROJECTS */
 #projects {
