@@ -281,16 +281,11 @@ p:nth-child(2){
   font-size: 15px;
 }
 
-.btn a:hover {
-  background-color: var(--brown);
-}
-.btn:focus {
-  background-color: var(--pink);
-}
-
-.btn a {
-background-color: var(--pink);
-}
+.waves-effect.waves-brown .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+   background-color: var(--pink);
+ }
 
 /* PROJECTS */
 #projects {
