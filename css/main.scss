@@ -284,6 +284,9 @@ p:nth-child(2){
 .btn:hover {
   background-color: var(--brown);
 }
+.btn:focus {
+  background-color: var(--pink);
+}
 
 
 /* PROJECTS */
