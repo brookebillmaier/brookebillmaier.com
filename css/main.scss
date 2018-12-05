@@ -178,6 +178,10 @@ p:nth-child(2){
 .headerContainer p {
   font-size: 1.5vw;
 }
+.headerContainer h1 {
+  border-bottom: 1px solid var(--lightpink);
+  margin-bottom: 4px;
+}
 
 
 
