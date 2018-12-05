@@ -272,23 +272,17 @@ p:nth-child(2){
 }
 
 
-.btn {
-  background-color: var(--pink);
-  border: none;
+.download {
+  padding: 10px;
+  font-size: 25px;
   color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 15px;
 }
 
-.red lighten-3:focus{
+.download a {
   background-color: var(--lightpink);
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 15px;
 }
-.red lighten-3:hover{
+
+.download:hover {
   background-color: var(--darklightpink);
 }
 
