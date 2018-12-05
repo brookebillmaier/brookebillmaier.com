@@ -207,7 +207,7 @@ p:nth-child(2){
 
 /* RESUME */
 #resume {
-  height: 45vw;
+  height: 55vw;
 }
 
 .resume {
@@ -274,12 +274,17 @@ p:nth-child(2){
 
 .download {
   padding: 10px;
-  font-size: 25px;
+  margin-left: 2px;
+  font-size: 13px;
+  color: white;
+  background-color: var(--lightpink);
+  text-transform: uppercase;
+}
+.download a {
   color: white;
 }
-
-.download a {
-  background-color: var(--lightpink);
+.download:focus {
+  background-color: var(--darklightpink);
 }
 
 .download:hover {
@@ -288,7 +293,7 @@ p:nth-child(2){
 
 /* PROJECTS */
 #projects {
-  height: 70vw;
+  height: 96vw;
 }
 .projects {
   border-bottom: 1px solid var(--brown);
@@ -322,6 +327,10 @@ p:nth-child(2){
 
 .articleImage{
   border-radius: 10px;
+}
+
+.githubIcon a {
+  color: black;
 }
 
 
@@ -499,7 +508,7 @@ nav {
 }
 
 .white-text {
-  font-family: "Source Serif Pro"
+  font-family: "Source Serif Pro";
   float: right;
 }
 .page-footer a, .page-footer a:visited {
