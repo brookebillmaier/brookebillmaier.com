@@ -290,6 +290,24 @@ p:nth-child(2){
 
 
 
+.download {
+  padding: 10px;
+  margin-left: 2px;
+  font-size: 13px;
+  color: white;
+  background-color: var(--lightpink);
+  text-transform: uppercase;
+}
+.download a {
+  color: white;
+}
+.download:focus {
+  background-color: var(--darklightpink);
+}
+
+.download:hover {
+  background-color: var(--darklightpink);
+}
 
 
 
