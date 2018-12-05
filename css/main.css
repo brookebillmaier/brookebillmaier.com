@@ -126,7 +126,7 @@ p:nth-child(2){
 
 /* ABOUT */
 #about {
-  height: 45vw;
+  height: 100%;
 }
 
 .aboutHeader {
@@ -155,7 +155,7 @@ p:nth-child(2){
   justify-content: flex-end;
   margin: auto 10vw;
 }
-
+/*
 //
 // .bubble {
 //   color: darkgray;
@@ -188,7 +188,7 @@ p:nth-child(2){
 //     top: -23vw;
 //     right: 15vw;
 //
-// }
+// } */
 
 
 
@@ -221,7 +221,7 @@ p:nth-child(2){
 
 /* RESUME */
 #resume {
-  height: 50vw;
+  height: 100%;
 }
 
 .resume {
@@ -313,7 +313,7 @@ p:nth-child(2){
 
 /* PROJECTS */
 #projects {
-  height: 100vw;
+  height: 100%;
 }
 .projects {
   border-bottom: 1px solid var(--brown);
