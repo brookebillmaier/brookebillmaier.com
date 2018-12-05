@@ -179,6 +179,9 @@ p:nth-child(2){
   font-size: 1.5vw;
 }
 
+.headerContainer h1 {
+  border-bottom: 1px solid var(--brown);
+}
 
 
 @media (max-width: 720px) {
@@ -420,6 +423,12 @@ nav {
   background-color: white;
 }
 
+.mobileNav {
+  display: none;
+}
+
+
+
 
 
 /* Menu Icon  */
@@ -452,7 +461,7 @@ nav {
 /* Mobile Devices */
 
 
-
+.
 
 
 
