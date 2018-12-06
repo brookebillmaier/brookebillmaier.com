@@ -1,5 +1,16 @@
 <div ng-controller="MainCtrl" class = "topnav" id="mobile">
-  <ul class ="navigation">
+<div class="nav-wrapper">
+  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+
+
+  <ul id="nav-mobile" class="navigation left hide-on-med-and-down">
     <li class="home" style="font-size: 2em;" href="/"><a href=""><i class="fas fa-home"></i></a></li>
     <li  class = "navlink" ng-click="scrollTo('about')"><a href="">About</a></li>
     <li class = "navlink" ng-click="scrollTo('resume')"><a href="">Resume</a></li>
@@ -7,7 +18,7 @@
     <li class = "navlink" ng-click="scrollTo('article')"><a href="">Articles</a></li>
   </ul>
 
-    <ul class ="right">
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
     <li class= "navlinkRight" style="font-size:2em;"><a href ="mailto:billm1be@cmich.edu">
     <i class="fas fa-envelope icon-4x"></i></li></a>
     <li class= "navlinkRight" style="font-size:2em;"><a href ="http://www.linkedin.com/in/brookebillmaier"><i class="fab fa-linkedin"></i></a></li>
@@ -15,9 +26,10 @@
 
 </div>
 </ul>
-    <div class="menuicon" onclick="myFunction(this)">
+    <!-- <div class="menuicon" onclick="myFunction(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
-    </div>
+    </div> -->
+
 </div>
