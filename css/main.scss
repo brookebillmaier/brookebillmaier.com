@@ -380,7 +380,7 @@ nav {
   justify-content: flex-start;
   font-family: 'Domine', serif;
   letter-spacing: 2px;
-  margin-bottom: .1vw;
+  margin-bottom: auto;
 }
 .navlink:hover {
   cursor: pointer;
@@ -392,6 +392,7 @@ nav {
   justify-content: flex-end;
   margin-top: 0;
   max-height: 4.75vw;
+  margin-bottom: auto;
 
 }
 .navlinkRight:hover {
@@ -403,6 +404,7 @@ nav {
   justify-content: flex-start;
   margin-left: 1vw;
   padding-top: 0;
+  margin-bottom: auto;
 }
 .home:hover {
   color: #a12028;
