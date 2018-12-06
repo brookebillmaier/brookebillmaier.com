@@ -307,7 +307,11 @@ p:nth-child(2){
 }
 .card {
   max-width: 30vw;
+  color: black;
 
+}
+.card a {
+  color: black;
 }
 .allcards {
   display: flex;
