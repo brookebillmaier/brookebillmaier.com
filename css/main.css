@@ -250,18 +250,29 @@ p:nth-child(2){
   border-bottom: 1px solid var(--brown);
   padding-bottom: 3px; }
 
-.card {
-  max-width: 30vw; }
-
 .allcards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 1vw; }
 
-.far fa-caret-circle-down {
-  font-size: 2em;
-  transform: scaleY(-1); }
+  .card {
+    max-width: 30vw;
+    color: black;
+
+  }
+  h3 {
+    color: black;
+  }
+  .githubIcon a {
+    color: black;
+  }
+  .githubIcon {
+    color: black;
+  }
+  .card a {
+    color: black;
+  }
 
 /* ARTICLE */
 #article {
