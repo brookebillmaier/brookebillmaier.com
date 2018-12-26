@@ -404,7 +404,7 @@ nav {
   .navlinkRight {
     display: block;
     position: sticky;
-    top: 0; }
+    top: 5px; }
 
     .headerContainer h1 {
       display: none; }
@@ -444,16 +444,17 @@ nav {
   .mobileheader {
     background-image: url("/mobileheader.png") no-repeat;
     overflow-x: none;
-    max-width: 400px;
-  display: block;
+    max-width: 300px;
+    display: block;
   }
 
   .viewButton {
-    top: 105vw;
+    top: 110vw;
     font-size: 15px;
     left: 34px;
     padding: 10px;
     min-width: 60vw;
+    margin-top: 10px;
 
   }
 
