@@ -69,6 +69,8 @@ $("#resizable").resizable({
 // nav bar trigger
 
 
+
+
   // Sticky Navbar Functionality
   $(document).ready(function(){
     // Even when the window is resized, run this code.
@@ -85,6 +87,14 @@ $("#resizable").resizable({
         }
       });
     }).resize();
+
+    setTimeout(function (){
+  $('.button-collapse').sideNav('show');
+  },1000)
+
+
+
+
   });
 
 

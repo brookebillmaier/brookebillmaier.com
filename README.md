@@ -2,7 +2,6 @@
 
 ## Technology Used:
 * HTML
-* Sass
 * Javascript
 * Node.js
 * Angular
