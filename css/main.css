@@ -442,9 +442,10 @@ nav {
 
   .viewButton {
     top: 60vw;
-    font-size: 25px;
-    left: 20px;
+    font-size: 15px;
+    left: 5px;
     padding: 15px;
+    min-width: 80vw;
 
   }
 
