@@ -88,17 +88,9 @@ $("#resizable").resizable({
       });
     }).resize();
 
-  });
 
 
-  (function($){
-  	$(function(){
-
-      $('.button-collapse').sideNav();
-    })
-  })
-
-
+});
 //moving navbar menuicon
   // function myFunction(x) {
   //     x.classList.toggle("change");
