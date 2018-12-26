@@ -434,7 +434,7 @@ nav {
 
   .landing {
     margin-top: 10vw;
-    min-height: 120vw;
+    min-height: 110vw;
     left: 0;
       }
 
@@ -446,6 +446,7 @@ nav {
     overflow-x: none;
     max-width: 300px;
     display: block;
+    margin-left: 5px;
   }
 
   .viewButton {
@@ -454,7 +455,6 @@ nav {
     left: 32px;
     padding: 10px;
     min-width: 60vw;
-    margin-top: 10px;
 
   }
 
@@ -550,6 +550,10 @@ nav {
    #resizable {
      min-width: 80vw;
      min-height: 60vw;
+   }
+
+   .page-footer {
+     width: 100vw;
    }
 
   /* #projects .card {
