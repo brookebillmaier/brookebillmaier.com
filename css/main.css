@@ -155,23 +155,11 @@ p:nth-child(2){
   border-bottom: 1px solid var(--brown);
   padding-bottom: 3px; }
 
-@media (max-width: 720px) {
-  .headerContainer h1 {
-    display: none; }
+.commentMobile {
+  display: none;
+}
 
-  .headerContainer p {
-    display: block;
-    width: 75vw;
-    font-size: 3vw;
-    margin: 0 10px;
-    padding-top: 0;
-    text-align: center; }
-
-  .bubble {
-    display: none; }
-
-  .bubble2 {
-    display: none; } }
+}
 /* RESUME */
 #resume {
   height: 100%; }
@@ -385,8 +373,26 @@ nav {
     position: sticky;
     top: 0; }
 
+    .headerContainer h1 {
+      display: none; }
+
+    .headerContainer p {
+      display: block;
+      width: 75vw;
+      font-size: 3vw;
+      margin: 0 10px;
+      padding-top: 0;
+      text-align: center; }
+
+    .bubble {
+      display: none; }
+
+    .bubble2 {
+      display: none;
+    }
+
   #resume {
-    height: 100%;
+    min-height: 100vw;
     text-align: center; }
 
   .codingScript {
@@ -394,8 +400,8 @@ nav {
 
 
   .landing {
-    margin-top: 20vw;
-    height: 80vw;
+    margin-top: 10vw;
+    min-height: 80vw;
       }
 
   .landingimage {
@@ -453,7 +459,23 @@ nav {
   }
 
   #about img {
-    display: none; }
+    width: 80vw;}
+
+  .commentContainer {
+      display: none; }
+
+  .headerContainer {
+    margin-bottom: 5vw;
+  }
+
+  .commentMobile {
+    display: flex;
+    max-width: 70vw;
+    max-height: 70vw;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
 
   .panel {
     width: 100%; }
@@ -466,19 +488,33 @@ nav {
   }
 
   .resumeContainer {
-    width: 100vw; }
+    width: 100vw;
+  display: block; }
 
   .barchart {
-    display: none; }
-
-  #articles img {
-    display: none; }
+    min-width: 80vw;
+    min-height: 60vw;
+    left: 10vw;
+    display: block;
+    align-items: center;
+    margin: 10vw;
+   }
+   #chartContainer1 {
+    min-width: 80vw;
+    min-height: 60vw;
+   }
+   #resizable {
+     min-width: 80vw;
+     min-height: 60vw;
+   }
 
   /* #projects .card {
     width: 100%;
     display: block; }  */
 
 }
+
+
 .page-footer .container {
   max-height: 15vw; }
 

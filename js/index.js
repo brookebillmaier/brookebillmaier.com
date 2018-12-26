@@ -88,17 +88,15 @@ $("#resizable").resizable({
       });
     }).resize();
 
-    setTimeout(function (){
-  $('.button-collapse').sideNav('show');
-  },1000)
-
-
-
-
   });
 
 
+  (function($){
+  	$(function(){
 
+      $('.button-collapse').sideNav();
+    })
+  })
 
 
 //moving navbar menuicon
