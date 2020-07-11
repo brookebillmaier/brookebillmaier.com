@@ -38,15 +38,17 @@ var options1 = {
 		showInLegend: false,
    		color: "#e65760",
 		dataPoints: [
-			{ label: "Git/Github", y: 75},
-			{ label: "SQL", y: 60 },
+      { label: "Java", y: 75},
+			{ label: "Git/Github", y: 65},
+			{ label: "SQL", y: 70 },
+      { label: "Oracle", y: 70 },
 			{ label: "jQuery", y: 30 },
-			{ label: "MongoDB", y: 55 },
+			{ label: "MongoDB", y: 45 },
 			{ label: "Angular", y: 50 },
-			{ label: "React", y: 45 },
-			{ label: "HTML/CSS/Sass", y: 75 },
-			{ label: "Ruby", y: 50 },
-			{ label: "Javascript", y: 40 }
+			{ label: "React", y: 35 },
+			{ label: "HTML/CSS/Sass", y: 65 },
+			{ label: "Ruby", y: 40 },
+			{ label: "Javascript", y: 30 }
 			],
 
 		}]
