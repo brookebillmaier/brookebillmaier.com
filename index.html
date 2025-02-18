@@ -1,101 +1,1352 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app="MainApp">
-  <head>
-  <!-- Angular Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <style>
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+      contain-intrinsic-size: 3000px 1500px
+    }
+  </style>
 
-  <!-- jQuery Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src = "/js/index.js"></script>
+  <title>Brooke Billmaier | Portfolio</title>
+  <meta name="description"
+    content="I’m a senior engineer focused on data accuracy, design, and backend integration with over seven&nbsp;years experience.">
+  <link rel="canonical" href="https://brookecodes.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brooke Billmaier| Portfolio Brooke Billmaier">
+  <meta property="og:description"
+    content="I’m a senior engineer focused on data accuracy, design, and backend integration with over seven&nbsp;years experience.">
+  <meta property="og:url" content="https://brookecodes.com/">
+  <meta property="og:site_name" content="Portfolio Brooke Billmaier">
+  <meta property="article:modified_time" content="2025-01-22T12:43:21+00:00">
+  <meta property="og:image" content="resources/favicon-300x300.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:type" content="image/jpeg">
+  <script type="application/ld+json"
+    class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://brookecodes.com/","url":"https://brookecodes.com/","name":"Brooke Billmaier | Portfolio","isPartOf":{"@id":"https://brookecodes.com/#website"},"about":{"@id":"https://brookecodes.com/#organization"},"datePublished":"2024-12-22T15:17:06+00:00","dateModified":"2025-01-22T12:43:21+00:00","description":"I’m a Senior engineer with over seven &nbsp;years experience.","breadcrumb":{"@id":"https://brookecodes.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://brookecodes.com/"]}]},{"@type":"BreadcrumbList","@id":"https://brookecodes.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://brookecodes.com/#website","url":"https://brookecodes.com/","name":"Portfolio Brooke Billmaier","description":"Independent Creative Developer","publisher":{"@id":"https://brookecodes.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://brookecodes.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://brookecodes.com/#organization","name":"Portfolio Brooke Billmaier","url":"https://brookecodes.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"","url":"resources/cursor.svg","contentUrl":"resources/cursor.svg","width":512,"height":512,"caption":"Portfolio Brooke Billmaier"},"image":{"@id":"/"},"sameAs":["]}]}</script>
+  <!-- / Yoast SEO plugin.-->
 
-  <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="stylesheet" id="theme-css-css" href="css/main.css" type="text/css" media="">
 
-  <!-- Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+  <!-- Google Analytics snippet added by Site Kit -->
+  <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GTM-KP3DJRPH" id="google_gtagjs-js"
+    async=""></script>
+  <script type="text/javascript" id="google_gtagjs-js-after">
+    /* <![CDATA[ */
+    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+    gtag("set", "linker", { "domains": ["brookecodes.com"] });
+    gtag("js", new Date());
+    gtag("set", "developer_id.dZTNiMT", true);
+    gtag("config", "GTM-KP3DJRPH", { "googlesitekit_post_type": "page" });
+    window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify({ name, data }); if (!!window._googlesitekit.throttledEvents[key]) { return; } window._googlesitekit.throttledEvents[key] = true; setTimeout(() => { delete window._googlesitekit.throttledEvents[key]; }, 5); gtag("event", name, { ...data, event_source: "site-kit" }); }
+    /* ]]> */
+  </script>
 
-  <!-- CanvasJS for barchart  -->
-  <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
-
-  <!-- Angular App.js Script -->
-  <script src="/js/app.js" charset="utf-8"></script>
-  <!-- Connecting CSS  -->
-  <link rel="stylesheet" type="text/css" href="/css/main.css"></link>
-
-  <link rel="icon"
-        type="image/png"
-        href="icon.png" />
-    <meta charset="utf-8">
-    <title>Brooke Billmaier</title>
-  </head>
-
-<!-- MAIN CONTROLLER -->
-  <body ng-controller="MainController as ctrl">
-    <!-- Header/ Landing Page -->
-    <a id ="top"></a>
-    <div class = "landing">
-  <div class="landingimage"></div>
-  <div class="mobileheader"><img src="/mobileheader.png" width="300px"/></div>
-  <br class="breakifmobile" />
-        <!-- <div class ="codingScript">sdfhsakjfhsklfhlasjkflas</div> -->
-      <!-- <div class="designerScript"><h1>DESIGNER</h1></div> -->
-      <div ng-controller="MainCtrl">
-     <button class ="viewButton" ng-click="scrollTo('projects')"> View my work
-       <i id="arrow" class="fas fa-arrow-right" style="font-size:1em;"></i></button>
-  </div></div>
-      <!--Include content from partials on navbar click
-          <div class = "container">
-            <div ng-include="ctrl.includePath"></div>
-          </div>-->
-
-    <!-- Include Navbar Partials -->
-    <nav id = "navigation red-lighten 2" ng-include="'partials/nav.html'"></nav>
-
-
+  <link rel="shortlink" href="https://brookecodes.com/">
+  <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="">
+  <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="">
+  <meta name="generator" content="Site Kit by Google 1.144.0">
+  <link rel="icon" href="resources/favicon300x300.png" sizes="32x32">
+  <link rel="icon" href="resources/favicon300x300.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="resources/favicon300x300.png">
+  <meta name="msapplication-TileImage" content="resources/favicon300x300.png">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+  </style>
 
 
+  <style type="text/css">
+    @font-face {
+      font-family: 'simple-line-icons';
+      src: url('chrome-extension://mihdfbecejheednfigjpdacgeilhlmnf/assets/fonts/Simple-Line-Icons.ttf') format('truetype');
+    }
+  </style>
+</head>
 
-      <!-- Include about content first -->
-    <div class="content">
-      <div id = "about" ng-include="'partials/about.html'">
-
+<body class="home page-template-default page page-id-9" data-new-gr-c-s-check-loaded="14.1219.0"
+  data-gr-ext-installed="">
+  <div data-scroll-wrapper="" data-scroll-content="" class="smooth-scroll" data-router-wrapper=""
+    style="--color-accent: #8082f8;">
+    <a href="#main" class="skip-to-main">Skip to main content</a>
+    <header class="header">
+      <div class="header__left large-body caps font-bold">
+        <a href="/" class="header__logo vf" style="--vt-name: logo;">
+          Brooke 
+        </a>
+        <div class="header__email">
+          <button class="copy-email">
+            <span class="sr-only">Copy email</span>
+            <svg viewBox="0 0 716 543" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M75 72C75 32.2355 107.236 0 147 0H644C683.765 0 716 32.2355 716 72V396C716 435.765 683.765 468 644 468H641V473C641 511.66 609.66 543 571 543H70C31.3401 543 0 511.66 0 473V145C0 106.34 31.3401 75 70 75H75V72ZM75 115H70C53.4315 115 40 128.431 40 145V473C40 489.569 53.4315 503 70 503H571C587.569 503 601 489.569 601 473V468H147C107.235 468 75 435.764 75 396V115ZM115 72C115 66.1986 116.544 60.7578 119.243 56.0659C125.34 63.2175 133.081 72.2485 142.071 82.6308C165.049 109.167 196.235 144.593 228.995 180.057C261.686 215.447 296.238 251.195 325.888 278.216C340.671 291.687 354.659 303.38 366.859 311.826C372.951 316.043 379.009 319.74 384.805 322.45C390.267 325.004 397.189 327.5 404.544 327.5C411.93 327.5 418.841 324.986 424.287 322.403C430.051 319.67 436.037 315.946 442.026 311.712C454.016 303.233 467.683 291.51 482.07 278.026C510.931 250.979 544.42 215.208 576.045 179.811C607.739 144.338 637.859 108.904 660.036 82.3631C665.569 75.7413 670.611 69.6691 675.063 64.2833C675.675 66°8°8.7547 676 69.3395 676 72V396C676 413.673 661.673 428 644 428H147C129.327 428 115 413.673 115 396V72ZM158.136 40H643.239C639.077 45.0314 634.418 50.6391 629.341 56.7149C607.332 83.0546 577.517 118.128 546.216 153.161C514.847 188.272 482.282 223.007 454.717 248.84C440.892 261.797 428.753 272.107 418.932 279.052C414.015 282.529 410.093 284.864 407.146 286.262C405.9 286.853 405.042 287.173 404.527 287.343C403.991 287.171 403.081 286.839 401.747 286.215C398.706 284.794 394.673 282.431 389.626 278.938C379.547 271.96 367.062 261.619 352.831 248.651C324.454 222.791 290.816 188.032 258.377 152.915C226.006 117.872 195.122 82.7912 172.311 56.4471C167.143 50.479 162.392 44.9625 158.136 40Z">
+              </path>
+            </svg>
+          </button>
+          <a href="mailto:hi@brookecodes.com">
+            hi@brookecodes.com
+          </a>
+        </div>
+        <p class="header__available-date">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 226 228" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M226 103C160.5 103 140.5 82.9997 140.5 3.5C140.5 83 120.5 103 56.5 103C120.5 103 140.5 123 142.5 216C140.5 123 160.5 103 226 103Z">
+              </path>
+              <path
+                d="M29 172.696C61.0737 172.696 70.8673 162.908 70.8673 124C70.8673 162.908 80.6608 172.696 112 172.696C80.6608 172.696 70.8673 182.485 69.8879 228C70.8673 182.485 61.0736 172.696 29 172.696Z">
+              </path>
+              <path
+                d="M0 48.6964C26.2773 48.6964 34.3009 38.9082 34.3009 0C34.3009 38.9083 42.3245 48.6964 68 48.6964C42.3245 48.6964 34.3009 58.4847 33.4985 104C34.3009 58.4847 26.2771 48.6964 0 48.6964Z">
+              </path>
+            </svg>
+          </span>
+          Seattle, WA
+        </p>
       </div>
-
-      <!-- Include resume content second -->
-      <div id = "resume" ng-include="'partials/resume.html'">
-
+      <div class="header__inner">
+        <button class="header__trigger">
+          <span class="sr-only">Menu</span>
+          <span class="icon">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect width="8" height="8"></rect>
+                <rect x="12" width="8" height="8"></rect>
+                <rect x="24" width="8" height="8"></rect>
+                <rect y="12" width="8" height="8"></rect>
+                <rect x="12" y="12" width="8" height="8"></rect>
+                <rect x="24" y="12" width="8" height="8"></rect>
+                <rect y="24" width="8" height="8"></rect>
+                <rect x="12" y="24" width="8" height="8"></rect>
+                <rect x="24" y="24" width="8" height="8"></rect>
+              </g>
+            </svg> </span>
+        </button>
+        <nav class="header__nav nav--top" aria-label="Top navigation">
+          <ul class="header__list">
+            <li class="header__item large-body caps font-bold ">
+              <a class="header__link" href="/about.html">
+                About </a>
+            </li>
+            <li class="header__item large-body caps font-bold ">
+              <a class="header__link" href="/projects.html">
+                Projects </a>
+            </li>
+            <li class="header__item large-body caps font-bold ">
+              <a class="header__link" href="/blogs.html">
+                Blogs </a>
+            </li>
+            <li class="header__item large-body caps font-bold ">
+              <a class="header__link" href="/contact.html">
+                Contact </a>
+            </li>
+            <li class="header__item medium-body caps font-bold mobile-only">
+              <ul class="socials">
+                <li>
+                  <strong>
+                    Socials
+                  </strong>
+                </li>
+                <li>
+                  <a href="https://github.com/brookebillmaier" target="_blank">
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/brookebillmaier/" target="_blank">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__item medium-body caps font-bold mobile-only">
+              Senior Developer </li>
+            <li class="header__item medium-body caps font-bold mobile-only">
+              <a href="mailto:hi@brookecodes.com">
+                hi@brookecodes.com
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <main id="main" class="app-transition-fade" data-router-view="page" data-scroll-container=""
+      style="--color-accent: #8082f8;">
+      <form method="dialog">
+        <button class="show-message large-body">
+          <span>
+            🦖
+          </span>
+          <div class="sr-only">
+            Dinosaur alert!
+          </div>
+        </button>
+      </form>
+      <dialog id="message" class="message supports-message">
+        <form method="dialog">
+          <button class="close-message">
+            <span class="sr-only">Close</span>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg> </button>
+        </form>
+        <p>This portfolio uses the latest CSS features, like <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations">scroll driven
+            animations</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API">view
+            transitions</a>, your browser does not support (all of) them. I've added fallback animations, but for the
+          best experience, please consider using a modern chromium-based browser.</p>
+      </dialog>
+      <section class="homepage-header" style="--color-accent: #8082f8;">
+        <section class="scroll-heading " style="view-timeline: --scroll-heading-679b8edbdc25b">
+          <h2 class="js-scroll-heading medium-heading caps">
+            <span style="animation-timeline: --scroll-heading-679b8edbdc25b">
+              Brooke<br>
+              Billmaier </span>
+          </h2>
+        </section>
+        <div class="homepage-header__titles"
+          style="translate: none; rotate: none; scale: none; transform: rotateY(-1.25367deg) rotateX(0.39786deg);">
+          <h1 class="sr-only">
+            Senior Engineer </h1>
+          <h1 class="homepage-header__title homepage-header__title--top huge-hero vf caps" aria-hidden="true"
+            style="--perspective-x: -0.250733; --perspective-y: 0.079572;">
+            Senior </h1>
+          <div class="moons">
+            <div class="item" aria-hidden="true"
+              style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate3d(341.42px, 83.0146px, 0px);">
+
+              <img data-lazy-load="" data-src="resources/cursor.svg" alt="" style="--ratio:1" src="resources/cursor.svg"
+                class="is-loaded">
+            </div>
+            <div class="item" aria-hidden="true"
+              style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate3d(186.747px, 190.669px, 0px);">
+
+              <img data-lazy-load="" data-src="resources/eyes.svg" alt="" style="--ratio:1" src="resources/eyes.svg"
+                class="is-loaded">
+            </div>
+            <div class="item" aria-hidden="true"
+              style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate3d(8.4217px, 202.121px, 0px);">
+
+              <img data-lazy-load="" data-src="resources/light.svg" alt="" style="--ratio:1" src="resources/light.svg"
+                class="is-loaded">
+            </div>
+            <div class="item" aria-hidden="true"
+              style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate3d(-58.905px, 70.3689px, 0px);">
+
+              <img data-lazy-load="" data-src="resources/planet.svg" alt="" style="--ratio:1" src="resources/planet.svg"
+                class="is-loaded">
+            </div>
+            <div class="item" aria-hidden="true"
+              style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate3d(114.039px, 10.3508px, 0px);">
+
+              <img data-lazy-load="" data-src="resources/plant.svg" alt="" style="--ratio:1" src="resources/plant.svg"
+                class="is-loaded">
+            </div>
+            <div class="item" aria-hidden="true"
+              style="translate: none; rotate: none; scale: none; transform-origin: 50% 50%; transform: translate3d(297.056px, -17.5847px, 0px);">
+
+              <img data-lazy-load="" data-src="resources/pointer.svg" alt="" style="--ratio:1"
+                src="resources/pointer.svg" class="is-loaded">
+            </div>
+          </div>
+          <svg aria-hidden="true" class="motionpath" viewBox="0 0 1474 782" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M723.5 35.0001C1144.17 -39.9999 1836.8 -41.2999 1242 553.5C498.5 1297 -832.5 -25.9997 723.5 35.0001Z">
+            </path>
+          </svg>
 
 
-      <!-- Include projects section third -->
-      <div id = "projects" ng-include="'partials/projects.html'">
+          <svg aria-hidden="true" class="homepage-header__ellipse" viewBox="0 0 1718.10407 1082.34997" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <clipPath id="clip-clop">
+                <path
+                  d="M1679.39 534.85 C1683.52 534.85 1687.64 534.85 1691.76 534.85 1610.73 1016.95 1363.98 1015.62 862.64 1070.28 110.64 1152.28 0 734.58 0 598.58 0 462.58 60.94 41.41 1034.18 1.28 1433.51 -19.37 1690.33 295.85 1691.76 534.84 1687.64 534.84 1683.52 534.84 1679.39 534.84 1652.55 290.17 1446.18 -0.04 1034.18 15.28 416.18 38.28 20 299.58 20 598.58 20 897.58 340.64 1118.28 862.64 1055.28 1328.33 1001.04 1573.16 1019.69 1679.39 534.85 "
+                  class="transform-0"
+                  data-original="M1708,275.627991 L1717,275.627991 C1687,786.567482 1330.33333,1017.96132 829,1072.62799 C77,1154.62799 0,669.627991 0,533.627991 C0,397.627991 13,60.6279919 908,3.62799184 C1307.33333,-17.0386748 1708,47.5674823 1717,275.567482 L1708,275.567482 C1682,43.5674823 1320,2.2946585 908,17.6279919 C290,40.6279919 20,234.627991 20,533.627991 C20,832.627991 307,1120.62799 829,1057.62799 C1298.33333,1018.29466 1657,775.567482 1708,275.627991 Z">
+                </path>
+                <path
+                  d="M1674,583.785575 L1687,583.785575 C1596.33333,1060.45224 1370.33333,1015.17941 869,1069.84608 C117,1151.84608 0,746.846084 0,610.846084 C0,474.846084 70,37.7855753 1058,0.846084822 C1457.33333,-19.8205818 1687,342.725066 1687,583.785575 L1674,583.785575 C1647,336.725066 1470,-0.487248518 1058,14.8460849 C440,37.8460849 20,311.846084 20,610.846084 C20,909.846084 347,1117.84608 869,1054.84608 C1334,997.785575 1557.33333,1065.78558 1674,583.785575 Z"
+                  class="transform-1"></path>
+              </clipPath>
+            </defs>
+            <path
+              d="M1708,275.627991 L1717,275.627991 C1687,786.567482 1330.33333,1017.96132 829,1072.62799 C77,1154.62799 0,669.627991 0,533.627991 C0,397.627991 13,60.6279919 908,3.62799184 C1307.33333,-17.0386748 1708,47.5674823 1717,275.567482 L1708,275.567482 C1682,43.5674823 1320,2.2946585 908,17.6279919 C290,40.6279919 20,234.627991 20,533.627991 C20,832.627991 307,1120.62799 829,1057.62799 C1298.33333,1018.29466 1657,775.567482 1708,275.627991 Z"
+              clip-path="url(#clip-clop)" fill="none" stroke-width="500" id="dash-offset"></path>
+          </svg>
+          <h1 class="homepage-header__title homepage-header__title--bottom huge-hero vf caps" aria-hidden="true"
+            style="--perspective-x: -0.250733; --perspective-y: 0.079572;">
+            Engineer </h1>
+        </div>
+        <div class="homepage-header__ticker caps small-heading font-bold">
+          <p class="homepage-header__tick"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+            I create user-focused Front-End applications with Back-End Data Solutions </p>
+          <p class="homepage-header__tick"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, -34.1px);">
+            I turn designs into rich experiences </p>
+          <p class="homepage-header__tick"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, -34.1px);">
+            Java software engineer focused in java on CIS and GIS integration </p>
+          <p class="homepage-header__tick"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, -34.1px);">
+            I mentor developers in data integration </p>
+          <p class="homepage-header__tick"
+            style="translate: none; rotate: none; scale: none; transform: translate(0px, -34.1px);">
+            Over <a href="/about" target="_blank">seven years </a> experience building data integration applications
+          </p>
+        </div>
+      </section>
+      <section class="selected-work"
+        style="timeline-scope: --entry0, --entry1, --entry2, --entry3, --entry4; --count: 5;">
+        <section class="scroll-heading " style="view-timeline: --scroll-heading-679b8edbdd6f0">
+          <h2 class="js-scroll-heading medium-heading caps">
+            <span style="animation-timeline: --scroll-heading-679b8edbdd6f0">
+              My<br>
+              work </span>
+          </h2>
+        </section>
+        <div class="selected-work__items">
+          <article class="work-thumb"
+            style="animation-timeline: --entry0; --color-accent: #6692c5;  --custom-rotate: 2deg; --z-index: 0;">
+            <div class="work-thumb__inner">
+              <div class="work-thumb__side work-thumb__side--front">
+                <div class="work-thumb__image js-thumb-media" data-vt="work-media-147">
+                  <img fetchpriority="high" decoding="async" width="1120" height="908"
+                    src="resources/authentication.jpeg" class="attachment-full size-full" alt="authentication" srcset="resources/authentication.jpeg 1120w,
+                    resources/authentication-300x243.jpeg 300w, resources/authentication-1024x830.jpeg 1024w,
+                    resources/authentication-768x623.jpeg 768w" sizes="(max-width: 1120px) 100vw, 1120px">
+                </div>
+                <div class="work-thumb__text">
+                  <h3 class="work-thumb__title medium-heading caps" style="animation-timeline: --entry0;">
+                    <a href="work/authentication.html" class="js-thumb-h3" data-vt="work-title-147">
+                      <span>
+                        Advanced Authentication </span>
+                    </a>
+                  </h3>
+                  <div class="labels">
+                    <span class="label caps font-bold small-body">
+                      2024 </span>
+                    <span class="label caps font-bold small-body">
+                      oAuth </span>
+                    <span class="label caps font-bold small-body">
+                      JWT </span>
+                    <span class="label caps font-bold small-body">
+                      Security </span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-thumb__side work-thumb__side--back"></div>
+            </div>
+          </article>
+          <style>
+            ::view-transition-group(root) {
+              animation-duration: 0.3s;
+            }
+
+            ::view-transition-old(work-media-147),
+            ::view-transition-new(work-media-147),
+            ::view-transition-new(work-img-147),
+            ::view-transition-old(work-img-147) {
+              /* Break aspect ratio at an element level */
+              animation-duration: 0.5s;
+              opacity: 1;
+              height: 100%;
+              /* But maintain it within the image itself */
+              object-fit: cover;
+              /* And hide parts of the image that go out of bounds */
+              overflow: clip;
+              border-radius: 1rem;
+            }
+
+
+            ::view-transition-new(work-blocks) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+              transform: translateY(100%);
+              opacity: 0;
+              animation-name: moveUp;
+            }
+
+            ::view-transition-group(work-title-147),
+            ::view-transition-group(work-media-147),
+            ::view-transition-group(work-img-147) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+            }
+
+            @keyframes moveUp {
+              from {
+                opacity: 0;
+                transform: translateY(100%);
+              }
+
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          </style>
+          <article class="work-thumb"
+            style="animation-timeline: --entry1; --color-accent: #912c3a;  --custom-rotate: -5deg; --z-index: 1;">
+            <div class="work-thumb__inner">
+              <div class="work-thumb__side work-thumb__side--front">
+                <div class="work-thumb__image js-thumb-media" data-vt="work-media-71" style="object-fit: cover;">
+                  <img fetchpriority="high" decoding="async" width="1120" height="908" src="resources/oracleimage.jpeg"
+                    class="attachment-full size-full" alt="oracle utilities" style="margin-left:1.3vw">
+                </div>
+                <div class="work-thumb__text">
+                  <h3 class="work-thumb__title medium-heading caps" style="animation-timeline: --entry1;">
+                    <a href="/work/OUAFIntegration.html" class="js-thumb-h3" data-vt="work-title-71">
+                      <span>
+                        Oracle Integration </span>
+                    </a>
+                  </h3>
+                  <div class="labels">
+                    <span class="label caps font-bold small-body">
+                      2024 </span>
+                    <span class="label caps font-bold small-body">
+                      Oracle Utilities </span>
+                    <span class="label caps font-bold small-body">
+                      Cloud </span>
+                    <span class="label caps font-bold small-body">
+                      SOAP/REST </span>
+                    <span class="label caps font-bold small-body">
+                      ORDS </span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-thumb__side work-thumb__side--back"></div>
+            </div>
+          </article>
+          <style>
+            ::view-transition-group(root) {
+              animation-duration: 0.3s;
+            }
+
+            /* ::view-transition-group(work-title-71),
+  ::view-transition-group(work-media-71),
+  ::view-transition-group(work-labels-71) {
+    animation-timing-function: ease-out;
+    animation-duration: 0.2s;
+  } */
+
+
+
+            ::view-transition-old(work-media-71),
+            ::view-transition-new(work-media-71),
+            ::view-transition-new(work-img-71),
+            ::view-transition-old(work-img-71) {
+              /* Break aspect ratio at an element level */
+              animation-duration: 0.5s;
+              opacity: 1;
+              height: 100%;
+              /* But maintain it within the image itself */
+              object-fit: cover;
+              /* And hide parts of the image that go out of bounds */
+              overflow: clip;
+              border-radius: 1rem;
+            }
+
+
+            ::view-transition-new(work-blocks) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+              transform: translateY(100%);
+              opacity: 0;
+              animation-name: moveUp;
+            }
+
+            ::view-transition-group(work-title-71),
+            ::view-transition-group(work-media-71),
+            ::view-transition-group(work-img-71) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+            }
+
+            @keyframes moveUp {
+              from {
+                opacity: 0;
+                transform: translateY(100%);
+              }
+
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          </style>
+          <article class="work-thumb"
+            style="animation-timeline: --entry2; --color-accent: #f1aa5e;  --custom-rotate: 3deg; --z-index: 2; justify-content: left;">
+            <div class="work-thumb__inner">
+              <div class="work-thumb__side work-thumb__side--front">
+                <div class="work-thumb__image js-thumb-media" data-vt="work-media-48">
+                  <img decoding="async" width="1024" height="708" src="resources/enterpriseengine.jpeg"
+                    class="attachment-full size-full" alt="Enterprise synchronization"
+                    sizes="(max-width: 1024px) 100vw, 1024px">
+                </div>
+                <div class="work-thumb__text">
+                  <h3 class="work-thumb__title medium-heading caps" style="animation-timeline: --entry2;">
+                    <a href="/work/enterpriseengine.html" class="js-thumb-h3" data-vt="work-title-48" style="text-align: center;
+    margin-left: 1;">
+                      <span>
+                        Enterprise Synchronization Engine</span>
+                    </a>
+                  </h3>
+                  <div class="labels">
+                    <span class="label caps font-bold small-body">
+                      2024 </span>
+                    <span class="label caps font-bold small-body">
+                      RDBMS </span>
+                    <span class="label caps font-bold small-body">
+                      API Frameworks </span>
+                    <span class="label caps font-bold small-body">
+                      Conflict Resolution </span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-thumb__side work-thumb__side--back"></div>
+            </div>
+          </article>
+          <style>
+            ::view-transition-group(root) {
+              animation-duration: 0.3s;
+            }
+
+            /* ::view-transition-group(work-title-48),
+  ::view-transition-group(work-media-48),
+  ::view-transition-group(work-labels-48) {
+    animation-timing-function: ease-out;
+    animation-duration: 0.2s;
+  } */
+
+
+
+            ::view-transition-old(work-media-48),
+            ::view-transition-new(work-media-48),
+            ::view-transition-new(work-img-48),
+            ::view-transition-old(work-img-48) {
+              /* Break aspect ratio at an element level */
+              animation-duration: 0.5s;
+              opacity: 1;
+              height: 100%;
+              /* But maintain it within the image itself */
+              object-fit: cover;
+              /* And hide parts of the image that go out of bounds */
+              overflow: clip;
+              border-radius: 1rem;
+            }
+
+
+            ::view-transition-new(work-blocks) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+              transform: translateY(100%);
+              opacity: 0;
+              animation-name: moveUp;
+            }
+
+            ::view-transition-group(work-title-48),
+            ::view-transition-group(work-media-48),
+            ::view-transition-group(work-img-48) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+            }
+
+            @keyframes moveUp {
+              from {
+                opacity: 0;
+                transform: translateY(100%);
+              }
+
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          </style>
+          <article class="work-thumb"
+            style="animation-timeline: --entry3; --color-accent: #5e7863;  --custom-rotate: -2deg; --z-index: 3;">
+            <div class="work-thumb__inner">
+              <div class="work-thumb__side work-thumb__side--front">
+                <div class="work-thumb__image js-thumb-media" data-vt="work-media-68">
+                  <img decoding="async" width="1024" height="708" src="resources/geospatial.jpeg"
+                    class="attachment-full size-full" alt="Enterprise synchronization"
+                    srcset="resources/geospatial.jpeg 1024w, resources/geospatial-300x207.jpeg 300w, resources/geospatial-768x531.jpeg 768w"
+                    sizes="(max-width: 1024px) 100vw, 1024px">
+                </div>
+                <div class="work-thumb__text">
+                  <h3 class="work-thumb__title medium-heading caps" style="animation-timeline: --entry3;">
+                    <a href="work/geospatialdata.html" class="js-thumb-h3" data-vt="work-title-68">
+                      <span>
+                        Geospatial Data Processing </span>
+                    </a>
+                  </h3>
+                  <div class="labels">
+                    <span class="label caps font-bold small-body">
+                      2024 </span>
+                    <span class="label caps font-bold small-body">
+                      GIS </span>
+                    <span class="label caps font-bold small-body">
+                      Esri </span>
+                    <span class="label caps font-bold small-body">
+                      Splits Handling </span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-thumb__side work-thumb__side--back"></div>
+            </div>
+          </article>
+          <style>
+            ::view-transition-group(root) {
+              animation-duration: 0.3s;
+            }
+
+            ::view-transition-old(work-media-66),
+            ::view-transition-new(work-media-66),
+            ::view-transition-new(work-img-66),
+            ::view-transition-old(work-img-66) {
+              /* Break aspect ratio at an element level */
+              animation-duration: 0.5s;
+              opacity: 1;
+              height: 100%;
+              /* But maintain it within the image itself */
+              object-fit: cover;
+              /* And hide parts of the image that go out of bounds */
+              overflow: clip;
+              border-radius: 1rem;
+            }
+
+
+            ::view-transition-new(work-blocks) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+              transform: translateY(100%);
+              opacity: 0;
+              animation-name: moveUp;
+            }
+
+            ::view-transition-group(work-title-66),
+            ::view-transition-group(work-media-66),
+            ::view-transition-group(work-img-66) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+            }
+
+            @keyframes moveUp {
+              from {
+                opacity: 0;
+                transform: translateY(100%);
+              }
+
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          </style>
+          <article class="work-thumb"
+            style="animation-timeline: --entry4; --color-accent: #8b5abd;  --custom-rotate: -4deg; --z-index: 4;">
+            <div class="work-thumb__inner">
+              <div class="work-thumb__side work-thumb__side--front">
+                <div class="work-thumb__image js-thumb-media" data-vt="work-media-66">
+                  <img loading="lazy" decoding="async" width="2560" height="1778" src="resources/connect4.jpeg"
+                    class="attachment-full size-full" alt="image of connect 4"
+                    sizes="auto, (max-width: 2560px) 100vw, 2560px">
+                </div>
+                <div class="work-thumb__text">
+                  <h3 class="work-thumb__title medium-heading caps" style="animation-timeline: --entry4;">
+                    <a href="work/connect4.html" class="js-thumb-h3" data-vt="work-title-66">
+                      <span>
+                        Connect Four </span>
+                    </a>
+                  </h3>
+                  <div class="labels">
+                    <span class="label caps font-bold small-body">
+                      2018 </span>
+                    <span class="label caps font-bold small-body">
+                      Games </span>
+                    <span class="label caps font-bold small-body">
+                      JavaScript </span>
+                    <span class="label caps font-bold small-body">
+                      Git </span>
+                  </div>
+                </div>
+              </div>
+              <div class="work-thumb__side work-thumb__side--back"></div>
+            </div>
+          </article>
+          <style>
+            ::view-transition-group(root) {
+              animation-duration: 0.3s;
+            }
+
+            /* ::view-transition-group(work-title-68),
+  ::view-transition-group(work-media-68),
+  ::view-transition-group(work-labels-68) {
+    animation-timing-function: ease-out;
+    animation-duration: 0.2s;
+  } */
+
+
+
+            ::view-transition-old(work-media-68),
+            ::view-transition-new(work-media-68),
+            ::view-transition-new(work-img-68),
+            ::view-transition-old(work-img-68) {
+              /* Break aspect ratio at an element level */
+              animation-duration: 0.5s;
+              opacity: 1;
+              height: 100%;
+              /* But maintain it within the image itself */
+              object-fit: cover;
+              /* And hide parts of the image that go out of bounds */
+              overflow: clip;
+              border-radius: 1rem;
+            }
+
+
+            ::view-transition-new(work-blocks) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+              transform: translateY(100%);
+              opacity: 0;
+              animation-name: moveUp;
+            }
+
+            ::view-transition-group(work-title-68),
+            ::view-transition-group(work-media-68),
+            ::view-transition-group(work-img-68) {
+              animation-timing-function: var(--default-ease);
+              animation-duration: 0.5s;
+            }
+
+            @keyframes moveUp {
+              from {
+                opacity: 0;
+                transform: translateY(100%);
+              }
+
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+          </style>
+        </div>
+        <div class="scroll-ticks">
+          <div class="scroll-tick" style="view-timeline: --entry0 y"></div>
+          <div class="scroll-tick" style="view-timeline: --entry1 y"></div>
+          <div class="scroll-tick" style="view-timeline: --entry2 y"></div>
+          <div class="scroll-tick" style="view-timeline: --entry3 y"></div>
+          <div class="scroll-tick" style="view-timeline: --entry4 y"></div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__top">
+        <a class="large-hero caps font-bold" href="/">Brooke Billmaier</a>
+        <div class="right">
+          <p class="small-heading caps font-bold">
+          </p>
+        </div>
       </div>
-
-      <!-- Include article content fourth -->
-      <div id = "article" ng-include="'partials/article.html'">
+      <div class="footer__middle">
+        <dl class="left large-body caps">
+          <dt style="font-size:2vw;">
+            <strong>Senior Developer</strong>
+          </dt>
+          <dt>
+          </dt>
+          <dd style="font-size:2vw;">Remote or Seattle, WA</dd>
+        </dl>
+        <div class="right">
+          <p class="footer__contact large-body caps font-bold" style="font-size:2vw;">
+            Have a question?<br>
+            <span class="email">
+              <span inert="" class="arrow">→ </span><a class="font-regular" href="mailto:hi@brookecodes.com"
+                style="font-size:2vw;">hi@brookecodes.com</a>
+            </span>
+          </p>
+        </div>
       </div>
-
-    </div>
-      <!-- Include Footer Partial-->
-    <footer ng-include="'partials/footer.html'">
+      <div class="footer__bottom caps medium-body">
+        <div class="footer__socials">
+          <ul class="socials" style="font-size:2vw;">
+            <li>
+              <strong>
+                Socials:
+              </strong>
+            </li>
+            <li>
+              <a href="https://github.com/brookebillmaier" target="_blank">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/brookebillmaier/" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
+          © 2025 Brooke Billmaier
+        </p>
+      </div>
     </footer>
+  </div>
+
+  <style id="wp-block-heading-inline-css" type="text/css">
+    h1.has-background,
+    h2.has-background,
+    h3.has-background,
+    h4.has-background,
+    h5.has-background,
+    h6.has-background {
+      padding: 1.25em 2.375em
+    }
+
+    h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),
+    h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),
+    h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]) {
+      rotate: 180deg
+    }
+  </style>
+  <style id="acf-homepage-header-style-inline-css" type="text/css">
+    :root {
+      --ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
+      --ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
+      --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+      --ease-in-quad: cubic-bezier(0.11, 0, 0.5, 0);
+      --ease-out-quad: cubic-bezier(0.5, 1, 0.89, 1);
+      --ease-in-out-quad: cubic-bezier(0.45, 0, 0.55, 1);
+      --ease-in-cubic: cubic-bezier(0.32, 0, 0.67, 0);
+      --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+      --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+      --ease-in-quart: cubic-bezier(0.5, 0, 0.75, 0);
+      --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+      --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+      --ease-in-quint: cubic-bezier(0.64, 0, 0.78, 0);
+      --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+      --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+      --ease-in-circ: cubic-bezier(0.55, 0, 1, 0.45);
+      --ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1);
+      --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+      --ease-in-back: cubic-bezier(0.36, 0, 0.66, -0.56);
+      --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-in-out-back: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      --ease-in-elastic: cubic-bezier(0.36, 0.66, 0.04, 1.44);
+      --ease-out-elastic: cubic-bezier(0.6, -0.24, 0.4, 0.8);
+      --ease-in-out-elastic: cubic-bezier(0.58, 0.82, 0.42, 1.18);
+      --ease-in-bounce: cubic-bezier(0.71, 0.03, 0.83, 0.67);
+      --ease-out-bounce: cubic-bezier(0.17, 0.67, 0.29, 0.99);
+      --ease-in-out-bounce: cubic-bezier(0.85, 0.01, 0.98, 0.99);
+      --default-ease: var(--ease-in-out-quart)
+    }
+
+    .sr-only:not(:focus):not(:active) {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%)
+    }
+
+    @keyframes fadeIn {
+      100% {
+        opacity: 1
+      }
+    }
+
+    :root {
+      --background: seashell;
+      --padding: max(1rem, 1.6666666667vw)
+    }
+
+    .homepage-header {
+      --perspective-x: 0;
+      --perspective-y: 0;
+      overflow-x: clip;
+      padding: clamp(4rem, 5.5555555556vw, 5vh) var(--padding) 0;
+      text-align: center;
+      color: var(--color-accent);
+      perspective: 800px;
+      view-timeline: --homepage-header y;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center
+    }
+
+    .homepage-header__titles {
+      position: relative;
+      z-index: 1;
+      -webkit-text-stroke: .1em var(--color-accent);
+      color: var(--background);
+      transform-style: preserve-3d
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 1024px) {
+      .homepage-header__titles {
+        margin-top: 20.8333333333vw;
+        -webkit-text-stroke: .08em var(--color-accent)
+      }
+    }
+
+    .homepage-header__title {
+      animation-timeline: --homepage-header;
+      animation-range: entry 100lvh exit
+    }
+
+    .homepage-header__title--top {
+      padding-top: .1em;
+      position: relative;
+      z-index: 2;
+      text-shadow: calc(-0.02em*(1 + var(--perspective-x))) calc(.02em*(1 + var(--perspective-y))) 0 var(--color-accent), calc(-0.04em*(1 + var(--perspective-x))) calc(.04em*(1 + var(--perspective-y))) 0 var(--color-accent), calc(-0.06em*(1 + var(--perspective-x))) calc(.06em*(1 + var(--perspective-y))) 0 var(--color-accent), 0 .35em .2em rgba(255, 105, 180, .3), 0 .25em .2em rgba(128, 130, 248, .6)
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      .homepage-header__title--top {
+        transform: translateZ(4.8611111111vw)
+      }
+
+      @supports(animation-timeline: view(y)) {
+        .homepage-header__title--top {
+          animation-name: ytuc-top
+        }
+      }
+    }
+
+    .homepage-header__title--bottom {
+      transform: translateZ(-0.6944444444vw);
+      text-shadow: calc(-0.02em*(1 + var(--perspective-x))) calc(.02em*(1 + var(--perspective-y))) 0 var(--color-accent), calc(-0.04em*(1 + var(--perspective-x))) calc(.04em*(1 + var(--perspective-y))) 0 var(--color-accent), calc(-0.06em*(1 + var(--perspective-x))) calc(.06em*(1 + var(--perspective-y))) 0 var(--color-accent);
+      margin-top: .18em;
+      padding-bottom: .2em;
+      font-variation-settings: "ytuc" 0
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      @supports(animation-timeline: view(y)) {
+        .homepage-header__title--bottom {
+          animation-name: ytuc-bottom
+        }
+      }
+    }
+
+    .homepage-header .moons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      pointer-events: none
+    }
+
+    .homepage-header .moons .item {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards
+    }
+
+    .homepage-header .moons img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: max(3rem, 4.1666666667vw);
+      height: max(3rem, 4.1666666667vw);
+      object-fit: contain;
+      transform-origin: 50% 50%;
+      transform-box: fill-box
+    }
+
+    .homepage-header .motionpath {
+      position: absolute;
+      top: -15%;
+      left: -25%;
+      width: 200%;
+      height: auto;
+      transform: rotateX(35deg) rotateY(-10deg);
+      pointer-events: none
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 1024px) {
+      .homepage-header .motionpath {
+        width: 160%;
+        left: -30%
+      }
+    }
+
+    .homepage-header__ellipse {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      --z: -10.4166666667vw;
+      transform: translate(-50%, -75%) translateZ(var(--z)) rotateX(75deg) rotateY(0deg);
+      width: 65.8333333333vw;
+      height: auto;
+      z-index: 1;
+      stroke: var(--color-accent);
+      min-width: 350px;
+      overflow: visible;
+      pointer-events: none
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 750px) {
+      .homepage-header__ellipse {
+        display: none
+      }
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      .homepage-header__ellipse {
+        animation: rotate-ellipse 30s var(--ease-out-quad) forwards infinite
+      }
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      .homepage-header__ellipse #dash-offset {
+        stroke-dashoffset: 9088;
+        stroke-dasharray: 9088, 18176;
+        animation: fill-ellipse 4s .2s var(--ease-out-quad) forwards
+      }
+    }
+
+    .homepage-header__ellipse .transform-1,
+    .homepage-header__ellipse .transform-2,
+    .homepage-header__ellipse .transform-3 {
+      visibility: hidden
+    }
+
+    .homepage-header__ticker {
+      position: relative;
+      width: 100%;
+      height: 1em;
+      height: 1lh;
+      overflow: hidden
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 1024px) {
+      .homepage-header__ticker {
+        font-size: 1rem
+      }
+    }
+
+    .homepage-header__ticker:has(.homepage-header__tick:focus-within) .homepage-header__tick {
+      transform: translateY(-1.1em) !important
+    }
+
+    .homepage-header__tick {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transform: translateY(-1.1em);
+      background: var(--background)
+    }
+
+    .homepage-header__tick:has(:focus-within) {
+      transform: translateY(0) !important
+    }
+
+    @keyframes fill-ellipse {
+      0% {
+        stroke-dashoffset: 9088
+      }
+
+      100% {
+        stroke-dashoffset: 0
+      }
+    }
+
+    @keyframes ytuc-top {
+      from {
+        font-variation-settings: "ytuc" 100;
+        transform: translateY(0)
+      }
+
+      to {
+        font-variation-settings: "ytuc" 0;
+        transform: translateY(-0.15em)
+      }
+    }
+
+    @keyframes ytuc-bottom {
+      from {
+        font-variation-settings: "ytuc" 0;
+        transform: translateY(0)
+      }
+
+      to {
+        font-variation-settings: "ytuc" 100;
+        transform: translateY(-0.5em)
+      }
+    }
+
+    @keyframes rotate-ellipse {
+      50% {
+        transform: translate(-50%, -75%) translateZ(var(--z)) rotateX(75deg) rotateY(-5deg)
+      }
+    }
+  </style>
+  <style id="acf-selected-work-style-inline-css" type="text/css">
+    :root {
+      --ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
+      --ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
+      --ease-in-out-sine: cubic-bezier(0.37, 0, 0.63, 1);
+      --ease-in-quad: cubic-bezier(0.11, 0, 0.5, 0);
+      --ease-out-quad: cubic-bezier(0.5, 1, 0.89, 1);
+      --ease-in-out-quad: cubic-bezier(0.45, 0, 0.55, 1);
+      --ease-in-cubic: cubic-bezier(0.32, 0, 0.67, 0);
+      --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1);
+      --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+      --ease-in-quart: cubic-bezier(0.5, 0, 0.75, 0);
+      --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+      --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+      --ease-in-quint: cubic-bezier(0.64, 0, 0.78, 0);
+      --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+      --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
+      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+      --ease-in-circ: cubic-bezier(0.55, 0, 1, 0.45);
+      --ease-out-circ: cubic-bezier(0, 0.55, 0.45, 1);
+      --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
+      --ease-in-back: cubic-bezier(0.36, 0, 0.66, -0.56);
+      --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ease-in-out-back: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      --ease-in-elastic: cubic-bezier(0.36, 0.66, 0.04, 1.44);
+      --ease-out-elastic: cubic-bezier(0.6, -0.24, 0.4, 0.8);
+      --ease-in-out-elastic: cubic-bezier(0.58, 0.82, 0.42, 1.18);
+      --ease-in-bounce: cubic-bezier(0.71, 0.03, 0.83, 0.67);
+      --ease-out-bounce: cubic-bezier(0.17, 0.67, 0.29, 0.99);
+      --ease-in-out-bounce: cubic-bezier(0.85, 0.01, 0.98, 0.99);
+      --default-ease: var(--ease-in-out-quart)
+    }
+
+    .sr-only:not(:focus):not(:active) {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%)
+    }
+
+    @keyframes fadeIn {
+      100% {
+        opacity: 1
+      }
+    }
+
+    :root {
+      --background: seashell;
+      --padding: max(1rem, 1.6666666667vw)
+    }
+
+    .selected-work {
+      --custom-rotate: 0deg;
+      position: relative;
+      padding: clamp(4rem, 5.5555555556vw, 5vh) 0 0;
+      text-align: center;
+      color: var(--color-accent)
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      .selected-work {
+        height: calc(50lvh*var(--count))
+      }
+    }
+
+    .selected-work__items {
+      --slider-duration: 1s;
+      padding: 0 var(--padding);
+      min-height: 100lvh;
+      overflow: hidden;
+      perspective: 1000px;
+      transform-style: preserve-3d
+    }
+
+    @media(prefers-reduced-motion: reduce) {
+      .selected-work__items {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: var(--padding);
+        width: 100%
+      }
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      .selected-work__items {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: unset
+      }
+    }
+
+    .selected-work .work-thumb {
+      position: relative;
+      grid-column: span 4;
+      z-index: calc(20 - var(--z-index));
+      --card-height: 38.1944444444vw
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 1024px) {
+      .selected-work .work-thumb {
+        --card-height: 72.9166666667vw
+      }
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 1024px) {
+      .selected-work .work-thumb {
+        --card-height: 135vw
+      }
+    }
+
+    @media(prefers-reduced-motion: no-preference) {
+      .selected-work .work-thumb {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+        transform: translateX(-50%) translateY(-50%)
+      }
+
+      @supports(view-timeline: --entry-0) {
+        .selected-work .work-thumb {
+          transform: none;
+          transition: none;
+          animation-name: appear;
+          animation-fill-mode: both;
+          animation-duration: 1ms;
+          animation-range: entry 100lvh exit
+        }
+
+        .selected-work .work-thumb:nth-last-child(1 of .work-thumb) {
+          animation-name: appear-only
+        }
+
+        .selected-work .work-thumb:nth-last-child(1 of .work-thumb) .work-thumb__image img {
+          animation: none
+        }
+
+        .selected-work .work-thumb .work-thumb__inner,
+        .selected-work .work-thumb .work-thumb__side--front {
+          animation-timeline: inherit
+        }
+
+        .selected-work .work-thumb .work-thumb__image {
+          perspective: 1000px;
+          animation-timeline: inherit
+        }
+
+        .selected-work .work-thumb .work-thumb__image img {
+          transform-style: preserve-3d;
+          display: block;
+          animation-timeline: inherit;
+          animation-name: move;
+          animation-fill-mode: both;
+          animation-duration: 1ms;
+          animation-range: entry 100lvh exit
+        }
+      }
+    }
+
+    .selected-work .scroll-ticks {
+      position: absolute;
+      top: 0;
+      bottom: 70lvh;
+      width: 10px;
+      display: flex;
+      flex-direction: column
+    }
+
+    .selected-work .scroll-ticks .scroll-tick {
+      position: relative;
+      width: 100%;
+      flex-grow: 1;
+      pointer-events: none
+    }
+
+    @keyframes appear {
+      0% {
+        transform: translateX(-50%) translateY(-50%) rotate(var(--custom-rotate))
+      }
+
+      20%,
+      30% {
+        transform: translateX(-50%) translateY(-50%) rotate(0) translateZ(30px)
+      }
+
+      40% {
+        transform: translateX(-48%) translateY(-50%) translateZ(30px) rotateY(2deg)
+      }
+
+      100% {
+        transform: translateX(-100vw) translateY(-50%) rotateY(-70deg)
+      }
+    }
+
+    @keyframes appear-only {
+      0% {
+        transform: translateX(-50%) translateY(-50%) rotate(var(--custom-rotate))
+      }
+
+      20%,
+      100% {
+        transform: translateX(-50%) translateY(-50%) rotate(0) translateZ(30px)
+      }
+    }
+
+    @keyframes move {
+
+      0%,
+      30% {
+        transform: scale(1.1) translateX(0)
+      }
+
+      40% {
+        transform: scale(1.1) translateX(-1%)
+      }
+
+      100% {
+        transform: scale(1.1) translateX(10%)
+      }
+    }
+  </style>
+  <script type="text/javascript" src="js/main.js" id="theme-appjs-js"></script>
+
+  <script defer=""
+    src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+    data-cf-beacon="{&quot;rayId&quot;:&quot;90a6531ffa0a76f2&quot;,&quot;version&quot;:&quot;2025.1.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;1cfa57516dc944b18303e68f61c03b72&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}"
+    crossorigin="anonymous"></script>
 
 
-
-
-
-
- <!-- Materialize Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
- <!-- CanvasJS script -->
-
- <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
- <script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
- <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-  </body>
-</html>
+</body>
